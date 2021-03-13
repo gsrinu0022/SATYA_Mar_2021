@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>CSS - Compound Selector</title>
+		<style type="text/css">
+			body
+			{
+				font-family: 'Tahoma';
+				font-size: 24px;
+			}	
+
+		/* selecting only <p> tags that have class="class1" */
+
+            p{
+            	background-color: red;
+            }
+            input
+            {
+            	background-color: yellow;
+            }
+			p.class1
+			{
+				background-color: skyblue;
+			}
+			p.class2
+			{
+				background-color: yellow;
+			}
+	    /* selecting only <input> tags that have class="class1" */
+
+			input.class1
+			{
+				background-color: red;
+				color: white;
+				height: 30px;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="class1">Compound Selector</h1>
+
+		<p class="class2">para 1</p>
+		<p class="class1">para 2</p>
+		<p class="class2">para 3</p>
+		<p class="class1">para 4</p>
+		<p>para 5</p>
+		<p class="class1">para 6</p>
+
+
+		<input type="text">
+		<input type="text" class="class1">
+		<input type="text">
+		<input type="text" class="class1">
+	</body>
+</html>

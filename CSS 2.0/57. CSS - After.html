@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>CSS - After</title>
+		<style type="text/css">
+			body
+			{
+				font-family: 'Tahoma';
+				font-size: 14px;
+			}
+			/* :: means psuedo element */
+			h1::before
+			{
+				content: " hello web " url(img/sample.png);
+
+			}
+			h1::after
+			{
+				content: url(img/sample.png);
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1>This is heading 1</h1>
+
+		<h1>This is heading 1</h1>
+
+		<h1>This is heading 1</h1>
+
+	</body>
+</html>

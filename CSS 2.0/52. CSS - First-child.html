@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>CSS - First-child</title>
+		<style type="text/css">
+			body
+			{
+				font-family: 'Tahoma';
+				font-size: 24px;
+			}
+
+			/* selects first <p> in <div> */
+			div p:first-child
+			{
+				color: blue;
+			}
+			/*only one h1 adjacent for div */
+			div+h1 
+			{
+				color: red;
+			}
+           /*All h1 adjacent for div */
+			div~h1
+			{
+				font-size: 26px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>
+
+			<p>This is some text.</p>
+			<p>This is some text.</p>
+			<p>This is some text.</p>
+			<p>This is some text.</p>
+			<p>This is some text.</p>
+			<p>This is some text.</p>
+
+		</div>
+		<h1> hello web</h1>
+		<h1> hello web</h1>
+
+	</body>
+</html>
